@@ -16,8 +16,8 @@ func Hello(name string) string {
 func Serve(dir string) {
 	fs := http.FileServer(http.Dir(dir))
 	http.Handle("/", fs)
-	log.Println("Listening on :3000 ...")
-	err := http.ListenAndServe(":3000", nil)
+	log.Println("Listening on :18001 ...")
+	err := http.ListenAndServe(":18001", nil)
 	if err != nil {
 		log.Fatal(err)
 	}
